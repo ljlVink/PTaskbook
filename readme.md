@@ -36,7 +36,7 @@ cmd /c TDM-GCC路径 -Wall -m32 -mwindows -std=c99 .\ZFunc10.c .\pt4.c -o ptprj.
 
 | Example | stdio | pt4 |备注|
 |-|-|-|-|
-|输入int型|scanf("%d",&int_type);|GetN(&int_type)|一次只能读入一个数据|
+|输入int型|scanf("%d",&int_type)|GetN(&int_type)|一次只能读入一个数据|
 |输入double型|scanf("%f %lf",&float_type,&double_type)|GetD(&only_double_type)|只有double|
 |输入bool型|-|GetB(&bool_type)|-|
 |输入char**字符**|scanf("%c",&char_type)|GetC(&char_type)|只是字符(未遇到此类题型，待定)|
