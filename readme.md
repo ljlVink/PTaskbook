@@ -55,6 +55,8 @@ cmd /c TDM-GCC路径 -Wall -m32 -mwindows -std=c99 .\ZFunc10.c .\pt4.c -o ptprj.
 |输入bool型|-|GetB(&bool_type)|-|
 |输入char**字符**|scanf("%c",&char_type)|GetC(&char_type)|只是字符(未遇到此类题型，待定)|
 |输入char**字符串**|scanf("%s",&char_str)|GetS(&char_str)|字符串类型(未遇到此类题型，待定)|
+|获取int矩阵|-|GetMatrN(matr_int,line,row,0)|获取int类型矩阵(仅限新版本PT4生效,第四个参数目前默认为0)|
+|获取double矩阵|-|GetMatrD(matr_double,line,row,0)|获取double类型矩阵(仅限新版本PT4生效,第四个参数目前默认为0)|
 
 输出操作
 
@@ -65,6 +67,8 @@ cmd /c TDM-GCC路径 -Wall -m32 -mwindows -std=c99 .\ZFunc10.c .\pt4.c -o ptprj.
 |输出bool型|-|PutB(bool_type)|-|
 |输出char**字符**|printf("%c",char_type)|PutC(char_type)|只是字符(未遇到此类题型，待定)|
 |输出char**字符串**|printf("%s",char_str)|PutS(char_str)|字符串类型(未遇到此类题型，待定)|
+|输出int矩阵|-|PutMatrN(matr_int,line,row,0)|输出int类型矩阵(仅限新版本PT4生效,第四个参数目前默认为0)|
+|输出double矩阵|-|PutMatrD(matr_double,line,row,0)|输出double类型矩阵(仅限新版本PT4生效,第四个参数目前默认为0)|
 
 ### Python下使用PT4
 
