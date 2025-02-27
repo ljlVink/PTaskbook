@@ -14,6 +14,8 @@
 
 - [Python下使用PT4](#python下使用pt4)
 
+- [C++下使用PT4](#C++下使用PT4)
+
 - [PT4调试技巧](#PT4调试技巧)
 
 ### 前言
@@ -113,6 +115,19 @@ python下没有官方教程，以下仅为阅读python下的PT4代码得到
 |输出bool型|print(x)|put(x)|万能输出|
 |输出char**字符串**|print(x)|put(x)|万能输出|
 
-## PT4调试技巧
+## C++下使用PT4
 
-略
+1.`I/O` 操作
+
+C++中由pt库代替了std::cin和std::cout,并且支持输出数组,不支持输出矩阵 (待试)
+
+并且可使用pt流式输入，也可以使用函数直接获取
+
+| Example | 标准io | pt4 | pt4 (流式) |备注|
+|-|-|-|-|-|
+|输入int|std::cin>>x|pt>>x|GetInt()||
+|输入double|std::cin>>x|pt>>x|GetDouble()||
+|输入bool|-|pt>>x|GetBool()||
+|输入str|std::cin>>x|pt>>x|GetString()||
+|输入char|std::cin>>x|pt>>x|GetChar()||
+|输出数组|for(auto x:a) cout<<x| pt<<a |-||
