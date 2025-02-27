@@ -1,6 +1,6 @@
 # PTaskbook_smbu
 
-[`c/python` answers.](https://github.com/ljlVink/PTaskbook/)
+[`c/cpp/python` answers.](https://github.com/ljlVink/PTaskbook/)
 
 ## 目录
 
@@ -15,8 +15,6 @@
 - [Python下使用PT4](#python下使用pt4)
 
 - [C++下使用PT4](#C++下使用PT4)
-
-- [PT4调试技巧](#PT4调试技巧)
 
 ### 前言
 
