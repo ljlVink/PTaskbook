@@ -11,16 +11,18 @@ void Solve()
     pt >> N;
     vector<int> a, b;
     for (int i = 0; i < N; i++)
-        a.push_back(GetInt());
-    for (int i = 0; i < N; i++)
-        if (a[i] & 1)
+    {
+        int val = GetInt();
+        if (val & 1)
         {
-            b.push_back(a[i]);
-            b.push_back(a[i]);
-            b.push_back(a[i]);
+            a.push_back(val);
+            a.push_back(val);
+            a.push_back(val);
         }
         else
-            b.push_back(a[i]);
-    for (auto i : b)
-        pt << i;
+        {
+            a.push_back(val);
+        }
+    }
+    pt << a;
 }

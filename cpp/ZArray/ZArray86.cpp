@@ -1,7 +1,5 @@
-// This task must be solved with vector<int>
-// or vector<double> (not an array!)
-#include <vector>
 #include "pt4.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 void Solve()
@@ -9,26 +7,10 @@ void Solve()
     Task("ZArray86");
     int N, K;
     pt >> N;
-    vector<double> arr, temp;
+    vector<double> arr;
     for (int i = 0; i < N; i++)
-    {
         arr.push_back(GetDouble());
-    }
     pt >> K;
-    for (int i = 0; i < K; ++i)
-    {
-        temp.push_back(arr[i]);
-    }
-    for (int i = 0; i < N - K; ++i)
-    {
-        arr[i] = arr[i + K];
-    }
-    for (int i = 0; i < K; ++i)
-    {
-        arr[N - K + i] = temp[i];
-    }
-    for (auto x : arr)
-    {
-        pt << x;
-    }
+    rotate(arr.begin(), arr.begin() + K, arr.end());
+    pt << arr;
 }
